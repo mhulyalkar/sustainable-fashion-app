@@ -5,16 +5,26 @@
   "type": "module",
   "homepage": "https://<your-username>.github.io/sustainable-fashion-app",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
+    "dev": "vite", 
+    "build": "tsc -b && vite build", 
+    "lint": "eslint .", 
+    "preview": "vite preview", 
+
+    "server:dev": "ts-node server/src/server.ts",
+    "server:build": "tsc -p server && node server/dist/server.js",
+    "server:start": "node server/dist/server.js",
+
+    "predeploy": "npm run build", 
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.4.5",
+    "openai": "^4.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
@@ -28,6 +38,7 @@
     "globals": "^16.3.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "ts-node": "^10.9.2"
   }
 }
