@@ -1,0 +1,19 @@
+{
+  "name": "sustainable_fashion_app-backend",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.12.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.2",
+    "@types/multer": "^1.4.7",
+    "@types/cors": "^2.8.13",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
