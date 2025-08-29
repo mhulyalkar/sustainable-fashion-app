@@ -1,6 +1,10 @@
 {
   "name": "sustainable_fashion_app-backend",
   "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
